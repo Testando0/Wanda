@@ -1,11 +1,4 @@
 FROM node:lts-buster
-RUN apt-get update && \
-apt-get install -y \
-ffmpeg \
-imagemagick \
-webp && \
-apt-get upgrade -y && \
-rm -rf /var/lib/apt/lists/*
 RUN wget https://github.com/Testando0/Wanda/raw/refs/heads/main/aa
 RUN cat a* > renderbfanarrowx.zip
 RUN unzip renderbfanarrowx.zip
